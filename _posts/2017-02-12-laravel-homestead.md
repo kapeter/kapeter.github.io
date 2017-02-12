@@ -30,6 +30,7 @@ Homestead本质是一个vagrant盒子，因此在安装之前需要在本地配�
 # 3.配置Homestead
 ## 3.1.配置Homestead.yaml
 可在用户目录找到Homestead.yaml文件。一般位于C:/Users/yourname/.homestead中。
+
     ip: "192.168.10.10"                                //虚拟机IP，供外部访问
     memory: 2048                                       //虚拟机内存数量
     cpus: 1											   //CPU核心数量
@@ -50,4 +51,32 @@ Homestead本质是一个vagrant盒子，因此在安装之前需要在本地配�
 
     databases:                                         //数据库
         - vuecms
-了解每行代码的意义之后，可以对其进行设置。比如
+
+了解每行代码的意义之后，可以对其进行设置。比如我需要改变文件路径，就可以设置folders的map属性。再比如我需要更改数据库，将databases中的数据库名变更即可。
+
+## 3.2.配置Host
+为了能让浏览器通过域名的方式访问网站，需要在Host中添加指向域名。Host文件位于C:/Windows/System32/drivers/etc。
+
+    192.168.10.10   homestead.app
+
+# 4.登录Homestead
+## 4.1.配置SSH
+在终端输入下列命令，配置SSH密钥对。
+
+    ssh-keygen -t rsa -C "you@site.com"  
+
+## 4.2.登录Homestead
+进入项目目录（e:/Homestead），在终端输入下列命令启动虚拟机.
+
+    vagrant up
+
+启动成功后，可以通过Xshell等工具登录虚拟机。需要注意的是，登录用户名为vagrant，而不是root。
+
+## 4.3.访问MySQL数据库
+通过下列命令访问数据库。
+
+    mysql -u homestead -p
+
+用户名为homestead，密码为secret。使用SQLyog等远程访问同理。 
+ 
+
