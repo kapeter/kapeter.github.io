@@ -299,7 +299,7 @@ pre {
  * Page content
  */
 .page-content {
-  padding-top: 130px; }
+  padding-top: 100px; }
   .page-content > .wrapper {
     padding-bottom: 50px; }
   @media screen and (max-width: 1000px) {
@@ -318,8 +318,8 @@ pre {
   list-style: none; }
   .post-list > li {
     border-bottom: 1px solid #e8e8e8;
-    padding-top: 85px;
-    padding-bottom: 85px; }
+    padding-top: 45px;
+    padding-bottom: 45px; }
   .post-list > li > h2 {
     margin-bottom: 26px; }
   .post-list > li > h2 > a {
@@ -416,7 +416,7 @@ pre {
   display: block;
   width: 100%; }
   .highlighter-rouge .highlight {
-    background: #eef; }
+    background: #f1f1f1; }
   .highlight .c {
     color: #998;
     font-style: italic; }
