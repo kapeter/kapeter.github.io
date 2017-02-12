@@ -10,10 +10,11 @@ Homestead本质是一个vagrant盒子，因此在安装之前需要在本地配�
 
 * virtualbox：[https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 * vagrant：[https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
+* Git：[https://git-scm.com/downloads](https://git-scm.com/downloads)
 
 下载完成后，安装即可。
 
-# 2.安装Laravel Homestead
+# 2.安装Homestead
 ## 2.1.下载Homestead Vagrant盒子
 在终端（我使用的是Git CMD）输入下列命令，将Homestead盒子添加到vagrant中。下载过程将会花费一些时间，时间长短取决于你的网络速度（国内用户建议开启代理）。
 
@@ -25,3 +26,28 @@ Homestead本质是一个vagrant盒子，因此在安装之前需要在本地配�
     git clone https://github.com/laravel/homestead.git Homestead
 
 下载完成后，进入项目目录，执行init.bat，创建Homestead.yaml配置文件。
+
+# 3.配置Homestead
+## 3.1.配置Homestead.yaml
+可在用户目录找到Homestead.yaml文件。一般位于C:/Users/yourname/.homestead中。
+    ip: "192.168.10.10"                                //虚拟机IP，供外部访问
+    memory: 2048                                       //虚拟机内存数量
+    cpus: 1											   //CPU核心数量
+    provider: virtualbox                               //所使用的虚拟机软件
+ 
+    authorize: ~/.ssh/id_rsa.pub                       //登录使用的公钥
+ 
+    keys:                                              //登录使用的公钥
+        - ~/.ssh/id_rsa
+
+    folders:                                           //目录映射
+        - map: E:/Project                              //本机地址，用于存放项目文件
+	      to: /home/vagrant/Code                       //所对应的虚拟机目录
+
+    sites:                                             //站点设置
+        - map: homestead.app                           //所使用的域名
+          to: /home/vagrant/Code/VueCms/public         //虚拟机中的网站目录
+
+    databases:                                         //数据库
+        - vuecms
+了解每行代码的意义之后，可以对其进行设置。比如
