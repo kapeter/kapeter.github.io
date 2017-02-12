@@ -2,8 +2,8 @@
 layout: post
 title: '[VueCms系列] windows下搭建开发环境——Laravel Homestead'
 date: '2017-02-12 19:24:10 +0800'
-tags: 'Mailbox, Theme'
-categories: 'VueCms,Laravel,Homestead'
+tags: 'VueCms, Homestead'
+categories: 'VueCms'
 ---
 # 1 前期配置
 Homestead本质是一个vagrant盒子，因此在安装之前需要在本地配置vagrant环境。
@@ -19,4 +19,4 @@ Homestead本质是一个vagrant盒子，因此在安装之前需要在本地配�
 
     vagrant box add laravel/homestead
 
-## 2.2 通过 GitHub 安装 Homestead
+## 2.2 通过GitHub安装Homestead
