@@ -20,3 +20,8 @@ Homestead本质是一个vagrant盒子，因此在安装之前需要在本地配�
     vagrant box add laravel/homestead
 
 ## 2.2.通过GitHub安装Homestead
+通过下列命令，从github上拉取项目到本地目录。我选择把项目放在E盘的根目录中，因此我的项目路径为e:/Homestead。
+
+    git clone https://github.com/laravel/homestead.git Homestead
+
+下载完成后，进入项目目录，执行init.bat，创建Homestead.yaml配置文件。
