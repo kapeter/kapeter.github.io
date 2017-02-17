@@ -17,5 +17,5 @@ paginate_path: "/page/:num/"
 twitter_username: kapeter
 github_username:  kapeter
 gems: [jekyll-paginate]
-markdown: redcarpet
+markdown: hexo
 baseurl: ""
