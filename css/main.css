@@ -35,7 +35,9 @@ ul, ol, dl, figure,
  */
 img {
   max-width: 100%;
-  vertical-align: middle; }
+  vertical-align: middle;
+  display: block;
+  border: 1px solid #e8e8e8; }
 
 /**
  * Figures
