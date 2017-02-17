@@ -47,7 +47,7 @@ Homestead本质是一个vagrant盒子，因此在安装之前需要在本地配�
 
     sites:                                             //站点设置
         - map: homestead.app                           //所使用的域名
-          to: /home/vagrant/Code/VueCms/public         //虚拟机中的网站目录
+          to: /home/vagrant/Code/VueCms/public         //虚拟机中的网站目录，Lavarel对外开放public目录
 
     databases:                                         //数据库
         - vuecms
