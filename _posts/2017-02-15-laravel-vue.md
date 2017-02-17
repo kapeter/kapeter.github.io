@@ -99,13 +99,13 @@ PS：在git CMD中运行npm会出现很多奇怪的问题，建议使用系统�
     <head>
         <meta charset="UTF-8">
         <title>Vue.js Example</title>
-        <meta name="csrf-token" content="\{\{ csrf_token() \}\}">
-        <link rel="stylesheet" type="text/css" href="\{\{ mix('css/app.css') \}\}">
+        <meta name="csrf-token" content="\{ \{ csrf_token() \} \}">
+        <link rel="stylesheet" type="text/css" href="\{ \{ mix('css/app.css') \} \}">
     </head>
     <body>
         <div id="app"></div>
 
-        <script src="\{\{ mix('js/app.js') \}\}"></script>  
+        <script src="\{ \{ mix('js/app.js') \} \}"></script>  
     </body>
     </html>
 
