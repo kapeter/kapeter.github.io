@@ -79,7 +79,7 @@ PS：在git CMD中运行npm会出现很多奇怪的问题，建议使用系统�
     npm run dev
 
 全部配置好后，在浏览器输入网址http://homestead.app（Homestead.yaml中配置的网址），如果出现以下画面，则说明安装成功。
-<img src="../images/laravel-install-success.png" alt="laravel install succeeded" width="640">
+<img src="/images/laravel-install-success.png" alt="laravel install succeeded" width="640">
 
 #2. 在Laravel中配置Vue.js
 ## 2.1. 插件配置
@@ -162,7 +162,7 @@ Laravel默认开启CSRF保护，我们已经在视图文件中添加了meta标�
     npm run watch
 
 现在再浏览首页，画面内容已经发生了改变，说明Vue.js配置成功。
-<img src="../images/Vuejs-setting-succeeded.png" alt="Vuejs setting succeeded" width="640">
+<img src="/images/Vuejs-setting-succeeded.png" alt="Vuejs setting succeeded" width="640">
 在此基础上，我们可以开发优雅的SPA应用啦。
 
 
